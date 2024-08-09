@@ -116,7 +116,6 @@ CALCS = {
 @app.route("/math/<calc>")
 def do_math(calc):
     """Do math on a and b."""
-
     a = int(request.args.get("a"))
     b = int(request.args.get("b"))
     result = CALCS[calc](a, b)
